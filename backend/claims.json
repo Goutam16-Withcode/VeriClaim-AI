@@ -1,0 +1,54 @@
+[
+  {
+    "id": "4E5247ED",
+    "dateSubmitted": "2026-06-09",
+    "status": "REJECTED",
+    "formDetails": {
+      "name": "Surbhit",
+      "date": "2026-06-10",
+      "facility": "Apollo Hospital",
+      "amount": 4500,
+      "reason": "HIV",
+      "type": "Health Check-up",
+      "desc": ""
+    },
+    "extractedDetails": {
+      "name": "Surbhit",
+      "date": "02/02/1233",
+      "facility": "Apollo Hospitals",
+      "disease": "HIV",
+      "icd10": "B20 - Human immunodeficiency virus [HIV] disease",
+      "total": 3150,
+      "itemizedBill": [
+        {
+          "item": "Doctor's fee",
+          "cost": 1500
+        },
+        {
+          "item": "Medicines",
+          "cost": 2000
+        },
+        {
+          "item": "Membership Discount",
+          "cost": -350
+        }
+      ],
+      "calculatedBillSum": 3150,
+      "prescriptionMatches": false,
+      "prescriptionMismatchReason": "No doctor's prescription or discharge summary was provided to cross-reference billed items/medications.",
+      "exclusionReason": "Policy General Exclusion 19, point 8: Treatment that commenced during the first five (5) years from the Coverage Commencement Date of this Scheme and which in any way arises from, is attributable to, or is consequential upon Human Immunodeficiency Virus Infection. The claim is for HIV treatment, which is explicitly listed as an exclusion."
+    },
+    "flags": [
+      "TREATMENT_DATE_MISMATCH",
+      "CLAIM_EXCEEDS_INVOICE_TOTAL",
+      "POLICY_EXCLUDED_DISEASE"
+    ],
+    "fraudRisk": "HIGH",
+    "riskPoints": 50,
+    "decisionReason": "Rejection: Treatment for 'HIV' is excluded under policy rules. Policy General Exclusion 19, point 8: Treatment that commenced during the first five (5) years from the Coverage Commencement Date of this Scheme and which in any way arises from, is attributable to, or is consequential upon Human Immunodeficiency Virus Infection. The claim is for HIV treatment, which is explicitly listed as an exclusion.",
+    "openaiReport": "## Claim Audit Report\n\n### Executive Summary\nClaim for Surbhit (Claim ID: Not Provided) is **DENIED**. The primary diagnosis of Human Immunodeficiency Virus (HIV) falls under a general exclusion clause in the VeriClaim AI Insurance Scheme Handbook. Additionally, there are significant discrepancies between the submitted claim details and the provided invoice regarding the date of service and the total claim amount.\n\n### Introduction & Claim Details\n**Patient Name:** Surbhit\n**Submitted Date:** 2026-06-10\n**Submitted Medical Facility:** Apollo Hospital\n**Submitted Claim Amount:** 4500\n**Claim Reason / Symptoms:** HIV\n**Claim Category / Item:** Health Check-up\n\n### Document Verification Details\n**Patient Name:** Matches (Surbhit) across submitted form and invoice.\n**Medical Facility:** Matches (Apollo Hospital / APOLLO HOSPITALS) across submitted form and invoice.\n**Date of Service:**\n*   **Submitted:** 2026-06-10\n*   **Invoice:** 02/02/1233\n    *   **Discrepancy:** There is a significant discrepancy in the year of service. The invoice indicates the year 1233, which is highly unusual and likely a data entry error, but must be processed as provided. The submitted date is in the future relative to the current year, while the invoice date is far in the past.\n**Claim Amount:**\n*   **Submitted:** 4500\n*   **Invoice (Amount Payable):** 3150\n    *   **Discrepancy:** The submitted claim amount is higher than the total amount payable on the invoice.\n**Diagnosis/Reason:**\n*   **Submitted:** HIV\n*   **Invoice:** Diagnosis: HIV\n    *   **Match:** The diagnosis matches.\n**Claim Category:**\n*   **Submitted:** Health Check-up\n*   **Invoice:** Details mention 'Continue having the given medicines as mentioned in the prescription', indicating treatment rather than just a routine check-up, despite the submitted category.\n\n### Itemized Bill Audit\nBased on the patient invoice/receipt:\n*   **Doctor’s fee:** 1500\n*   **Medicines:** 2000\n*   **Total charge (before discount):** 3500\n*   **Membership Discount (10%):** -350\n*   **Amount payable:** 3150\n\nThe itemized costs sum up correctly to the 'Amount payable' of 3150. The submitted claim amount of 4500 does not align with the invoice's total payable amount.\n\n### Exclusion & Fraud Assessment\n**Primary Diagnosis:** HIV (ICD-10: B20 - Human immunodeficiency virus [HIV] disease)\n\n**Policy Guideline Check (MembershipHandbook-22-23.pdf - General exclusions 19):**\n*   **Exclusion 8:** \"Treatment that commenced during the first five (5) years from the Coverage Commencement Date of this Scheme and which in any way arises from, is attributable to, or is consequential upon Human Immunodeficiency Virus Infection.\"\n    *   The patient's diagnosis is explicitly HIV. This condition is directly addressed by exclusion 8. While the 'Coverage Commencement Date' is not provided, the policy explicitly excludes treatment for HIV under certain conditions. Without evidence to demonstrate that the treatment falls outside the initial five-year exclusion period, the claim for HIV treatment is subject to this general exclusion.\n*   **Exclusion 6:** \"Any charges in respect of preventive measures including but not limited to routine blood tests, general check-ups, vaccination or inoculations...\"\n    *   The patient submitted the claim under 'Health Check-up'. If the service was purely a general check-up, it would also be excluded under this clause. However, the invoice details suggest ongoing treatment for HIV, which falls under the more specific exclusion 8.\n\n**Prescription Cross-reference:** No doctor's prescription or discharge summary was provided, therefore, it is not possible to cross-reference the billed items/medications against an authorized prescription.\n\n### Final Verdict\nBased on the analysis, the claim for Surbhit is **DENIED**.\n\nThe primary reason for denial is that the treatment for Human Immunodeficiency Virus (HIV) falls under **General Exclusion 19, point 8** of the VeriClaim AI Insurance Scheme policy guidelines. Furthermore, there are significant discrepancies in the date of service and the claimed amount compared to the provided invoice, which raises concerns regarding the validity and accuracy of the submitted claim.",
+    "receiptUrl": "/api/uploads/receipt-1781037242664-400294743.pdf",
+    "prescriptionUrl": null,
+    "adminNotes": ""
+  }
+]

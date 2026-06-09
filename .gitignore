@@ -1,0 +1,44 @@
+# Dependency directories
+node_modules/
+package-lock.json (if you want lockfiles excluded, but usually we track package-lock.json, so let's only exclude node_modules/)
+
+# Node/Vite build output
+frontend/dist/
+*.local
+
+# Environment variables (Critical Security)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+python-venv/
+
+# App Uploads & DB Caches (ignores dynamic uploads and processed FAISS databases)
+backend/uploads/*
+!backend/uploads/.gitkeep
+faiss_index/
+new_faiss/
+
+# OS/System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
