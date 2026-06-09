@@ -129,7 +129,11 @@ This updates the files in `frontend/dist` which are served by the backend.
 ## 📸 Interface Preview & Screenshots
 
 ### 🎥 Live System Demonstration Walkthrough
-Watch the automated claim verification, OCR invoice ingestion, policy handbook semantic checks, and the admin adjuster override workflow in action:
+Watch the automated claim verification, OCR invoice ingestion, policy handbook semantic checks, and the admin adjuster override workflow in action.
+
+*If the video player below does not render on GitHub, **[click here to watch the demo video file directly](./screenshots/demo_recording.mp4)** or click on the preview image:*
+
+[![Watch System Demonstration](./screenshots/claim_audit_details.png)](./screenshots/demo_recording.mp4)
 
 <video src="./screenshots/demo_recording.mp4" width="100%" controls></video>
 
